@@ -2,7 +2,7 @@
   "name": "restaurant_js",
   "version": "1.0.0",
   "description": "A simple Restaurant Homepage to practice DOM manipulation through dynamic rendering.",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,5 +20,8 @@
   "devDependencies": {
     "webpack": "^5.28.0",
     "webpack-cli": "^4.6.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
   }
 }
