@@ -10,3 +10,5 @@ function component() {
 }
 
 document.body.appendChild(component());
+
+console.log('Just achangin stuff in here hehehe :)');
