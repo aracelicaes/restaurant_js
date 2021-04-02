@@ -1,14 +1,21 @@
-import _ from 'lodash';
+import topNav from './top_nav';
+import footer from './footer';
+import home from './home';
 
 function component() {
-  const element = document.createElement('div');
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  element.classList.add('disabled');
-
-  return element;
+  return 'IM WORKING JUST FINE BEAUTIFULLY!';
 }
 
-document.body.appendChild(component());
+console.log(component());
 
-console.log('Just achangin stuff in here hehehe :)');
+const topNavigation = document.getElementsByClassName('theHeader')[0];
+console.log(topNavigation);
+topNavigation.appendChild(topNav());
+
+const theFooter = document.getElementsByClassName('theFooter')[0];
+console.log(theFooter);
+theFooter.appendChild(footer());
+
+const homeMiddle = document.getElementsByClassName('theContent')[0];
+console.log(homeMiddle);
+homeMiddle.appendChild(home());
