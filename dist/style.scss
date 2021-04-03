@@ -41,7 +41,6 @@ html {
   }
 }
 
-
 .fixed_nav {
   @include gilda-rg;
   font-size: 2.5rem;
@@ -131,4 +130,46 @@ footer {
   width: 16rem;
   left: 70rem;
   top: 60%;
+}
+
+.menu-img {
+  background-image: none;
+  background-color: $black;
+}
+
+.menu_element {
+  height: 70vh;
+
+  .menu_img_container {
+    width: 100%;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.element_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inside_element {
+  margin-left: 20%;
+  .menu_title {
+    @include gayathri-lg;
+    font-size: 4.5rem;
+  }
+  .menu_text {
+    @include gilda-rg;
+    font-size: 1.25rem;
+    width: 75%;
+  }
+
+  .menu_price {
+    @include gayathri-lg;
+    font-size: 2.5rem;
+  }
 }

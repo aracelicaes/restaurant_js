@@ -1,6 +1,7 @@
 import topNav from './top_nav';
 import footer from './footer';
 import home from './home';
+import menu from './menu';
 
 function component() {
   return 'IM WORKING JUST FINE BEAUTIFULLY!';
@@ -19,3 +20,7 @@ theFooter.appendChild(footer());
 const homeMiddle = document.getElementsByClassName('theContent')[0];
 console.log(homeMiddle);
 homeMiddle.appendChild(home());
+
+const theMenu = document.getElementsByClassName('theContent')[0];
+console.log(theMenu);
+theMenu.appendChild(menu());
