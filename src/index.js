@@ -22,5 +22,5 @@ console.log(homeMiddle);
 homeMiddle.appendChild(home());
 
 const theMenu = document.getElementsByClassName('theContent')[0];
-console.log(theMenu);
 theMenu.appendChild(menu());
+console.log(theMenu);
