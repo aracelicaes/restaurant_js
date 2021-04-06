@@ -10,7 +10,7 @@ topNavigation.appendChild(topNav());
 const theFooter = document.getElementsByClassName('theFooter')[0];
 theFooter.appendChild(footer());
 
-const theContent = document.getElementsByClassName('theContent')[0];
+const theContent = document.getElementById('content');
 theContent.innerHTML = '';
 theContent.appendChild(home());
 
