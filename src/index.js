@@ -2,6 +2,8 @@ import topNav from './top_nav';
 import footer from './footer';
 import home from './home';
 import menu from './menu';
+import about from './about';
+
 
 function component() {
   return 'IM WORKING JUST FINE BEAUTIFULLY!';
@@ -17,10 +19,31 @@ const theFooter = document.getElementsByClassName('theFooter')[0];
 console.log(theFooter);
 theFooter.appendChild(footer());
 
-const homeMiddle = document.getElementsByClassName('theContent')[0];
-console.log(homeMiddle);
-homeMiddle.appendChild(home());
+const theContent = document.getElementsByClassName('theContent')[0];
+console.log(theContent);
+theContent.innerHTML = '';
+theContent.appendChild(home());
 
-const theMenu = document.getElementsByClassName('theContent')[0];
-theMenu.appendChild(menu());
-console.log(theMenu);
+const homeLink = document.querySelector('#home');
+homeLink.addEventListener('click', (e) => {
+  e.preventDefault();
+  console.log('helloooo home');
+  theContent.innerHTML = '';
+  theContent.appendChild(home());
+});
+
+const menuLink = document.querySelector('#menu');
+menuLink.addEventListener('click', (e) => {
+  e.preventDefault();
+  console.log('helloooo beautiful');
+  theContent.innerHTML = '';
+  theContent.appendChild(menu());
+});
+
+const aboutLink = document.querySelector('#about');
+aboutLink.addEventListener('click', (e) => {
+  e.preventDefault();
+  console.log('sarh smiles');
+  theContent.innerHTML = '';
+  theContent.appendChild(about());
+})

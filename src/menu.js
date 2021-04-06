@@ -72,7 +72,7 @@ function menu() {
                           </div>
                         </div>
                       </div> `;
-  theMenu.className('middle_menu');
+  theMenu.className = 'middle_menu';
 
   return theMenu;
 }
