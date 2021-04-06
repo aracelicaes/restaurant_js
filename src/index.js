@@ -4,33 +4,41 @@ import home from './home';
 import menu from './menu';
 import about from './about';
 
-const topNavigation = document.getElementsByClassName('theHeader')[0];
-topNavigation.appendChild(topNav());
-
-const theFooter = document.getElementsByClassName('theFooter')[0];
-theFooter.appendChild(footer());
-
 const theContent = document.getElementById('content');
-theContent.innerHTML = '';
-theContent.appendChild(home());
+const insideContent = document.createElement('div');
+insideContent.className = 'main-content';
+
+const top = () => {
+  theContent.appendChild(topNav());
+};
+
+const bottom = () => {
+  theContent.appendChild(footer());
+};
+
+insideContent.innerHTML = '';
+top();
+theContent.appendChild(insideContent);
+insideContent.appendChild(home());
+bottom();
 
 const homeLink = document.querySelector('#home');
 homeLink.addEventListener('click', (e) => {
   e.preventDefault();
-  theContent.innerHTML = '';
-  theContent.appendChild(home());
+  insideContent.innerHTML = '';
+  insideContent.appendChild(home());
 });
 
 const menuLink = document.querySelector('#menu');
 menuLink.addEventListener('click', (e) => {
   e.preventDefault();
-  theContent.innerHTML = '';
-  theContent.appendChild(menu());
+  insideContent.innerHTML = '';
+  insideContent.appendChild(menu());
 });
 
 const aboutLink = document.querySelector('#about');
 aboutLink.addEventListener('click', (e) => {
   e.preventDefault();
-  theContent.innerHTML = '';
-  theContent.appendChild(about());
+  insideContent.innerHTML = '';
+  insideContent.appendChild(about());
 });
