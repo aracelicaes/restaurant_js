@@ -1,4 +1,4 @@
-function about() {
+const about = () => {
   const theAbout = document.createElement('div');
   theAbout.innerHTML = ` <div class="about_content">
                           <h2 class="about_title">LUNA30</h2>
@@ -7,6 +7,6 @@ function about() {
   theAbout.className = 'middle bkg-img-about';
 
   return theAbout;
-}
+};
 
 export default about;

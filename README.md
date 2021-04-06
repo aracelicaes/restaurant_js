@@ -6,6 +6,7 @@ A simple Restaurant Homepage to practice DOM manipulation through dynamic render
 - [restaurant_js](#restaurant_js)
   - [Table of Contents](#table-of-contents)
 - [About The Project](#about-the-project)
+  - [Built With](#built-with)
   - [Installation](#installation)
   - [Live View:](#live-view)
 - [Authors](#authors)
@@ -19,8 +20,22 @@ When you click on each navigation link "Home, Menu, About" you will see the page
 
 <img src="luna30.jpg" width="600" height="350">
 
+## Built With
+
+  * JavaScript
+  *  Node.js
+  *  Webpack
+  *  Babel
+  *  Bootstrap
+  *  SCSS
+  *  HTML
+
 ## Installation
 * Clone the repo with [this repo link](https://github.com/aracelicaes/restaurant_js/tree/feature/restaurant)
+
+* Run `npm install` in the terminal to install all dependencies and packages.
+
+* Run `npm run serve` in the terminal and then open `http://localhost:3000/` in your browser, select the `dist` directory to view the project live.
 
 ## Live View:
 

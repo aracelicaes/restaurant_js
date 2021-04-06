@@ -1,4 +1,4 @@
-function menu() {
+const menu = () => {
   const theMenu = document.createElement('div');
   theMenu.innerHTML = ` <div class="menu_element d-flex">
                         <div class="menu_img_container">
@@ -75,6 +75,6 @@ function menu() {
   theMenu.className = 'middle_menu';
 
   return theMenu;
-}
+};
 
 export default menu;
