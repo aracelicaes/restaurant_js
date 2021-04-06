@@ -24,7 +24,7 @@ When you click on each navigation link "Home, Menu, About" you will see the page
 
 ## Live View:
 
-Check out the Live View [Here!](https://github.com/aracelicaes/restaurant_js/tree/feature/restaurant)
+Check out the Live View [Here!](https://luna30.netlify.app/)
 
 <!-- CONTACT -->
 # Authors
