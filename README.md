@@ -15,7 +15,7 @@ A simple Restaurant Homepage to practice DOM manipulation through dynamic render
 # About The Project
 A simple Restaurant Homepage to practice DOM manipulation through dynamic rendering, the use of event listeners, and webpack to divide each content part into modules and reduce the load time of the site.
 
-When you click on each navigation link "Home, Menu, About" you will see the page doesn't reload, but it'll render a different content each time. This is through DOM manipulation, resetting the DOM each time a link is clicked and the appending the proper and corresponding content to each link.
+When you click on each navigation link "Home, Menu, About" you will see the page doesn't reload, but it'll render a different content each time. This is through DOM manipulation, resetting the DOM each time a link is clicked, and appending the proper and corresponding content to each link.
 
 <img src="luna30.jpg" width="600" height="350">
 
